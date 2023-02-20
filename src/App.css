@@ -156,3 +156,71 @@ ul ul li::before {
   content: "";
   margin-right: 0;
 }
+
+
+.room-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.room-header {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #0088cc;
+  color: white;
+}
+
+.room-message-container {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.room-message-mutual {
+  background-color: #f1f0f0;
+  color: black;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+}
+
+.room-message-group {
+  background-color: #ebebeb;
+  color: black;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-self: flex-end;
+}
+
+.room-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-top: 1px solid #ccc;
+}
+
+.room-input {
+  flex: 1;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.room-send-button {
+  background-color: #0088cc;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+}
