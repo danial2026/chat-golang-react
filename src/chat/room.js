@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import W3CWebSocket from 'websocket';
-// import './chat.css'
+import './chat.css'
 
 const styles = {
   container: {
