@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+
+import DarkHeader from './header';
+
+import ChatRoomsPage from './chat/listrooms';
+import RoomPage from './chat/room';
+import LoginPage from './auth/login';
+import LogoutPage from './auth/logout';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <DarkHeader />
+      </nav>
+
+      <Router>
+        <Routes>
+          <Route path='/' element={ <ChatRoomsPage /> } />
+          <Route path='/rooms' element={ <ChatRoomsPage /> } />
+          <Route path='/room' element={ <RoomPage /> } />
+          <Route path='/login' element={ <LoginPage /> } />
+          <Route path='/logout' element={ <LogoutPage /> } />
+        </Routes>
+      </Router>
     </div>
   );
 }

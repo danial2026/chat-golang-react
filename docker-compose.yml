@@ -1,0 +1,11 @@
+version: '3'
+services:
+  chat-react-client:
+    build: .
+    ports:
+      - "5858:3000"
+
+networks:
+  default:
+    external:
+      name: danial_default
