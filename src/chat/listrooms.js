@@ -42,7 +42,7 @@ function RoomList() {
 
   useEffect(() => {
     const fetchData = async (accessToken) => {
-      const response = await fetch('http://192.168.1.34:4000/query', {
+      const response = await fetch('https://chatgraphql.danials.space/query', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${accessToken}`,

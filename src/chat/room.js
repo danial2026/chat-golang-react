@@ -27,7 +27,7 @@ function RoomPage() {
     if (redirectParam) {
       setRoomId(redirectParam)
       const fetchData = async (accessToken, roomId) => {
-        const newClient = new W3CWebSocket.w3cwebsocket('ws://192.168.1.34:8066/ws' + '?token=' + accessToken + '&room_id=' + roomId);
+        const newClient = new W3CWebSocket.w3cwebsocket('wss://chatws.danials.space/ws' + '?token=' + accessToken + '&room_id=' + roomId);
 
         newClient.onopen = () => {
           console.log('WebSocket Client Connected');
