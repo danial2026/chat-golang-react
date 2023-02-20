@@ -22,7 +22,7 @@ const DarkHeader = () => {
   }}>
     <a href='/' style={{ textDecoration: 'none' }}>
     <h2 className="title">
-      Authentication Service
+      Chat Service
     </h2>
     </a>
     <nav style={{ display: 'flex' }}>
